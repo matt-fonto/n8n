@@ -23,7 +23,7 @@
 - Nodes: Each step, each ingredient
 - Execution: when an order comes in
 
-## core concepts
+## Part 1: Core concepts
 
 ### types of nodes
 
@@ -84,3 +84,82 @@ https://www.youtube.com/watch?v=ZHH3sr234zY&list=PLFbXZOeg7GKZdj0IvSrln2WbrJh54c
 ![alt text](image-3.png)
 
 - Once the execution is fine, click in activating it
+
+## Part 2: RAG and Vector Databases
+
+### RAG - Retrieval-Augmented Generation
+
+- RAG: Retrieval-Augmented Generation
+  - RAG is awesome for up-to-date and customized generation
+- Helps AI models provide more accurate and relevant answers
+  - Retrieval: Retrives relevant information from external sources
+  - Generation: AI uses this information to generate an answer
+
+### Vector Databases
+
+- RAG needs a way to store and retrieve data efficiently
+- Vectors:
+  - Data stored in "vectors"
+  - Numerical database that represents the meaning of words, text, etc
+  - Relevant information quickly
+
+### Embed Data to Vector Database
+
+- Data loading:
+  - Handles the data coming in to pass it off to a text splitter
+- Text splitting:
+  - "Chunks" up the text for more efficient retrieval
+    - Character, recursive character, token
+
+#### Supabase
+
+- Select supabase vector store
+
+  - Add document to vector store
+  - add the service_role key and the url
+    - settings/configuration/data API
+    - quick start for vector db: https://supabase.com/docs/guides/ai/langchain?database-method=sql
+
+- Initializing vector sql
+
+```sql
+
+-- Enable the pgvector extension to work with embedding vectors
+create extension vector;
+
+-- Create a table to store your documents
+create table documents (
+  id bigserial primary key,
+  content text, -- corresponds to Document.pageContent
+  metadata jsonb, -- corresponds to Document.metadata
+  embedding vector(1536) -- 1536 works for OpenAI embeddings, change if needed
+);
+
+-- Create a function to search for documents
+create function match_documents (
+  query_embedding vector(1536),
+  match_count int default null,
+  filter jsonb DEFAULT '{}'
+) returns table (
+  id bigint,
+  content text,
+  metadata jsonb,
+  similarity float
+)
+language plpgsql
+as $$
+#variable_conflict use_column
+begin
+  return query
+  select
+    id,
+    content,
+    metadata,
+    1 - (documents.embedding <=> query_embedding) as similarity
+  from documents
+  where metadata @> filter
+  order by documents.embedding <=> query_embedding
+  limit match_count;
+end;
+$$;
+```
