@@ -1,0 +1,134 @@
+{
+  "name": "Newsletter Generator",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "newsletter",
+        "httpMethod": "POST",
+        "responseMode": "onReceived"
+      },
+      "name": "On form submission",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [200, 300],
+      "webhookId": "a1b2c3d4e5"
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o-mini",
+        "temperature": 0.7,
+        "maxTokens": 800,
+        "prompt": "You are an AI agent responsible for planning the sections of a newsletter by creating an engaging table of contents tailored to the newsletter's topic, tone, and target audience.\\n\\nTopic: {{$node[\"On form submission\"].json[\"Topic\"]}}\\nTone: {{$node[\"On form submission\"].json[\"Tone\"]}}\\nTarget Audience: {{$node[\"On form submission\"].json[\"Target Audience\"]}}\\n\\n1. Analyse the topic, tone and audience.\\n2. Search relevant and trending sub-topics.\\n3. Return JSON only: { \\\"tableOfContents\\\": [\"Title 1\", \"Title 2\", … ] } (4-6 items, no other keys)."
+      },
+      "name": "Newsletter Expert",
+      "type": "n8n-nodes-base.openai",
+      "typeVersion": 1,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o-mini",
+        "temperature": 0.3,
+        "maxTokens": 600,
+        "prompt": "Your job is to split the table of contents into individual items.\\n\\nTarget Audience: {{$node[\"On form submission\"].json[\"Target Audience\"]}}\\nTone: {{$node[\"On form submission\"].json[\"Tone\"]}}\\nTable of Contents: {{$node[\"Newsletter Expert\"].json[\"tableOfContents\"]}}\\n\\nReturn JSON only: { \\\"newsletterSections\\\": [ { \\\"title\\\": \"…\", \\\"description\\\": \"…\" } ] }"
+      },
+      "name": "Project Planner",
+      "type": "n8n-nodes-base.openai",
+      "typeVersion": 1,
+      "position": [800, 300]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o-mini",
+        "temperature": 0.7,
+        "maxTokens": 1800,
+        "prompt": "You deliver final content for newsletter sections.\\n\\nSections: {{$node[\"Project Planner\"].json[\"newsletterSections\"]}}\\nTarget Audience: {{$node[\"On form submission\"].json[\"Target Audience\"]}}\\nTone: {{$node[\"On form submission\"].json[\"Tone\"]}}\\n\\nFor each section produce 150-200 words, well-researched, with inline HTML hyperlink citations.\\n\\nReturn JSON only: { \\\"sectionsContent\\\": [ { \\\"title\\\": \"…\", \\\"content\\\": \"…\" } ] }"
+      },
+      "name": "Research Team",
+      "type": "n8n-nodes-base.openai",
+      "typeVersion": 1,
+      "position": [1100, 300]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o-mini",
+        "temperature": 0.4,
+        "maxTokens": 1400,
+        "prompt": "You are an expert editor. Assemble a polished HTML newsletter (≤1000 words).\\n\\nSections: {{$node[\"Research Team\"].json[\"sectionsContent\"]}}\\n\\nRequirements:\\n– Start with the first section heading (no intro).\\n– Use <h2> for each section title.\\n– Keep inline citations.\\n– Finish with a <h3>Sources</h3><ul>…</ul> block listing all links alphabetically.\\n\\nReturn JSON only: { \\\"html\\\": \"…\" }"
+      },
+      "name": "Editor",
+      "type": "n8n-nodes-base.openai",
+      "typeVersion": 1,
+      "position": [1400, 300]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o-mini",
+        "temperature": 0.5,
+        "maxTokens": 50,
+        "prompt": "Create a succinct title for the newsletter below. Capitalize the first letter of each word, no quotes.\\n\\nTone: {{$node[\"On form submission\"].json[\"Tone\"]}}\\nTarget Audience: {{$node[\"On form submission\"].json[\"Target Audience\"]}}\\n\\n{{$node[\"Editor\"].json[\"html\"]}}"
+      },
+      "name": "Create Title",
+      "type": "n8n-nodes-base.openai",
+      "typeVersion": 1,
+      "position": [1700, 300]
+    }
+  ],
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "Newsletter Expert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Newsletter Expert": {
+      "main": [
+        [
+          {
+            "node": "Project Planner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Project Planner": {
+      "main": [
+        [
+          {
+            "node": "Research Team",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Research Team": {
+      "main": [
+        [
+          {
+            "node": "Editor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Editor": {
+      "main": [
+        [
+          {
+            "node": "Create Title",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -163,3 +163,16 @@ begin
 end;
 $$;
 ```
+
+- The more examples you give an agent, the better he will understand the concepts and how you sound like
+
+## Part 3: Expanding Agents
+
+### 3.1 Building workflows as tools
+
+- AI Agents can use them
+- Tools can be reused and combined
+- Scaling
+- The tools/workflows that you build, you should use them to build on top of others
+
+### 3.2 Showcasing examples
