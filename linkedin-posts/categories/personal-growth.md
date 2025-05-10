@@ -1,8 +1,30 @@
-## Post 1
+## POST 1
+
+🔴 You can't have both growth and comfort
+
+Why?
+
+🟢 You pay for growth with comfort
+It's the price of admission.
+
+What's one time trading comfort for growth worked for you?
+
+♻ Repost to inspire someone today
+➕ And follow me Miko Pawlikowski 🎙️ for more.
+
+## POST 2
+
+The most useful thing I discovered for myself in the last years:
+
+Good is better than perfect ✅
+
+It helps me finish an unlimited number of tasks, especially when I was preparing my presentation about leadership in the context of legacy projects.
+
+## POST 3
 
 You will love whatever you pour your heart into. Passion follows commitment.
 
-## Post 2
+## POST 4
 
 The Paradox of Freedom: The way to expand your freedom is to narrow your focus.
 
@@ -12,15 +34,15 @@ The Paradox of Freedom: The way to expand your freedom is to narrow your focus.
 
 The disciplined become the free.
 
-## Post 3
+## POST 5
 
 The ultimate form of preparation is not planning for a specific scenario, but a mindset that can handle uncertainty.
 
-## Post 4
+## POST 6
 
 The days can be easy if the years are consistent. You can write a book or get in shape or code a piece of software in 30 minutes per day. But the key is you can't miss a bunch of days.
 
-## POST 5
+## POST 7
 
 5 Subtle Japanese Techniques to level up your life:
 

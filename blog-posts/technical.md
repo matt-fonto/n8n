@@ -3,6 +3,8 @@
 - https://www.robinwieruch.de/
 - https://kentcdodds.com/blog
 - https://leerob.com/
+- https://overreacted.io/ : dan's blog
+  https://www.joshwcomeau.com/ - amazing blog
 
 # Post 1
 

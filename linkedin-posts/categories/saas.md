@@ -1,5 +1,3 @@
-https://www.linkedin.com/in/simonhoiberg/
-
 ## Post 1
 
 ### Prompt
