@@ -89,7 +89,7 @@ Pick a path. Master it. Then expand your borders.
 That’s how you grow. That’s how you stand out. No one needs to be a unicorn.
 Just be damn good at what you do and stay curious.
 
-### POST 5
+## POST 4
 
 17 Subtle Rules of Software Engineering:
 
@@ -113,7 +113,7 @@ Just be damn good at what you do and stay curious.
 
 What did I miss?
 
-## POST 7
+## POST 5
 
 2025: “AI will replace software engineers.”
 2008: “Autogeneration will replace software engineers.”
@@ -149,7 +149,7 @@ Prove me wrong. I’ll wait. 🕰️🤔
 ♻️ Repost to challenge the myth
 🔔 Follow Miko Pawlikowski 🎙️ for more tech truths
 
-## POST 8
+## POST 6
 
 13 Lessons from 13 years in Software Engineering:
 
@@ -169,7 +169,7 @@ Prove me wrong. I’ll wait. 🕰️🤔
 
 What should I add to the list?
 
-## POST 9
+## POST 7
 
 19 Worst Rules of Software Engineering:
 
@@ -195,7 +195,7 @@ What should I add to the list?
 
 What's no 20 I should add?
 
-## POST 10
+## POST 8
 
 18 Subtle Rules of Software Engineering:
 
@@ -223,7 +223,7 @@ What did I miss?
 ♻️ Repost so that more developers see this.
 And follow <name> 🎙️for more.
 
-## POST 11
+## POST 9
 
 90% of software engineers just don't get it:
 
@@ -240,7 +240,7 @@ Why is it so common?
 ♻️ Repost so that it finally lands
 🔔 And follow Miko Pawlikowski 🎙️ for more.
 
-## POST 12
+## POST 10
 
 ### Post
 
@@ -291,7 +291,7 @@ A full-stack dev (and I say this as a full-stack dev myself, leaning heavily tow
 It’s not about doing it all.
 It’s about doing it right.
 
-## POST 13
+## POST 11
 
 ### Prompt
 
@@ -337,7 +337,7 @@ These insights took time and experience to internalize. I’m still learning eve
 
 What lessons have you learned in your IT journey that you’d share with others?
 
-## POST 5
+## POST 12
 
 ### Prompt
 

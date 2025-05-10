@@ -1,82 +1,9 @@
-## POST 1
-
-🔴 You can't have both growth and comfort
-
-Why?
-
-🟢 You pay for growth with comfort
-It's the price of admission.
-
-What's one time trading comfort for growth worked for you?
-
-♻ Repost to inspire someone today
-➕ And follow me Miko Pawlikowski 🎙️ for more.
-
-## POST 2
-
-The most useful thing I discovered for myself in the last years:
-
-Good is better than perfect ✅
-
-It helps me finish an unlimited number of tasks, especially when I was preparing my presentation about leadership in the context of legacy projects.
-
-## POST 3
-
-You will love whatever you pour your heart into. Passion follows commitment.
-
-## POST 4
-
-The Paradox of Freedom: The way to expand your freedom is to narrow your focus.
-
-- Stay focused on saving to achieve financial freedom.
-- Stay focused on training to achieve physical freedom.
-- Stay focused on learning to achieve intellectual freedom.
-
-The disciplined become the free.
-
-## POST 5
-
-The ultimate form of preparation is not planning for a specific scenario, but a mindset that can handle uncertainty.
-
-## POST 6
-
-The days can be easy if the years are consistent. You can write a book or get in shape or code a piece of software in 30 minutes per day. But the key is you can't miss a bunch of days.
-
-## POST 7
-
-5 Subtle Japanese Techniques to level up your life:
-
-0/ Ikigai / purpose of life
-生き甲斐
-
-Why: Provides direction to other actions
-How: Find intersection of what you love, what pays your bills, and what you’re good at
-
-1/ Kaizen / continuous improvement
-改善
-
-Why: Continuous improvement compounds
-How: Focus on small, achievable goals that build on top of another
-
-2/ Osoji / spring cleaning
-大掃除
-
-Why: Declutter your world to make room for growth
-How: Make cleaning things up a habit
-
-3/ Kintsugi / gold repair
-金継ぎ
-
-Why: Appreciate the beauty of healing
-How: Reflect on how overcoming setbacks made you stronger
-
-4/ Ichi-go ichi-e / one life, one meeting
-一期一会
-
-Why: Everything encounter only happens once
-How: Appreciate the fleeting nature of life
-
-Which one speaks to you the most?
-
-♻ Repost to inspire someone today
-➕ And follow me Miko Pawlikowski 🎙️ for more.
+| id  | prompt                                                                                                                                                                    | content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Write a punchy LinkedIn post arguing that you can’t have both growth and comfort, explain why briefly, and invite readers to share a time they chose growth over comfort. | 🔴 You can't have both growth and comfort<br><br>Why?<br><br>🟢 You pay for growth with comfort<br>It's the price of admission.<br><br>What's one time trading comfort for growth worked for you?<br><br>♻ Repost to inspire someone today<br>➕ And follow me Miko Pawlikowski 🎙️ for more.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 2   | Compose a short reflective post about why “good is better than perfect,” give one concrete personal example, and reinforce the takeaway.                                  | The most useful thing I discovered for myself in the last years:<br><br>Good is better than perfect ✅<br><br>It helps me finish an unlimited number of tasks, especially when I was preparing my presentation about leadership in the context of legacy projects.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 3   | Give me a single-sentence motivational insight that shows how passion follows commitment.                                                                                 | You will love whatever you pour your heart into. Passion follows commitment.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 4   | Draft a concise post on the “Paradox of Freedom”: explain how narrowing focus expands freedom, list a few examples, and close with a memorable line.                      | The Paradox of Freedom: The way to expand your freedom is to narrow your focus.<br><br>- Stay focused on saving to achieve financial freedom.<br>- Stay focused on training to achieve physical freedom.<br>- Stay focused on learning to achieve intellectual freedom.<br><br>The disciplined become the free.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| 5   | Create a brief motivational nugget contrasting detailed planning with a mindset that handles uncertainty, explaining why the latter is more valuable.                     | The ultimate form of preparation is not planning for a specific scenario, but a mindset that can handle uncertainty.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| 6   | Write an encouraging post showing how doing 30 minutes a day on a goal (writing, fitness, coding) adds up—emphasize never skipping days.                                  | The days can be easy if the years are consistent. You can write a book or get in shape or code a piece of software in 30 minutes per day. But the key is you can't miss a bunch of days.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| 7   | Generate a listicle of five Japanese concepts (e.g., Ikigai, Kaizen) with a short definition and one actionable tip each, then ask which one resonates most.              | 5 Subtle Japanese Techniques to level up your life:<br><br>0/ Ikigai / purpose of life 生き甲斐<br>Why: Provides direction to other actions<br>How: Find intersection of what you love, what pays your bills, and what you’re good at<br><br>1/ Kaizen / continuous improvement 改善<br>Why: Continuous improvement compounds<br>How: Focus on small, achievable goals that build on top of another<br><br>2/ Osoji / spring cleaning 大掃除<br>Why: Declutter your world to make room for growth<br>How: Make cleaning things up a habit<br><br>3/ Kintsugi / gold repair 金継ぎ<br>Why: Appreciate the beauty of healing<br>How: Reflect on how overcoming setbacks made you stronger<br><br>4/ Ichi-go ichi-e / one life, one meeting 一期一会<br>Why: Everything encounter only happens once<br>How: Appreciate the fleeting nature of life<br><br>Which one speaks to you the most?<br><br>♻ Repost to inspire someone today<br>➕ And follow me Miko Pawlikowski 🎙️ for more. |
