@@ -208,4 +208,10 @@ $$;
 
 - Error workflows
 - Best practices
+
+  - Keep workflows organized
+  - Use sub-workflows for reusability
+  - Implement error handling
+  - Optimize for scalability
+
 - Next steps
