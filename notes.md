@@ -176,3 +176,36 @@ $$;
 - The tools/workflows that you build, you should use them to build on top of others
 
 ### 3.2 Showcasing examples
+
+## Part 4: APIs & HTTP Requests
+
+### 4.1 APIs, Endpoints, Calls
+
+- Application Programming Interface
+
+  - Bridge that allows 2 different software programs to exchange information
+  - API endpoint: specific address (URL) for our request
+  - API call: request made to the API
+  - HTTP request: method used to send the API call
+
+- Fundamentally, all available nodes are actually some pre-built API connectoins
+
+### 4.2 n8n examples
+
+- Search HTTP request on the canvas
+
+  - method
+  - url
+  - authentication
+  - send query params
+  - send headers
+  - send body
+  - options
+
+- n8n Examples
+
+## Part 5: Conclusion
+
+- Error workflows
+- Best practices
+- Next steps
