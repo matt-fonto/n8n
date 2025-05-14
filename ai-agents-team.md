@@ -14,3 +14,25 @@
 
 <the content>
 ```
+
+- After you've gathered the posts you like, convert them to `jsonl` in this format:
+
+```json
+{
+  "messages": [
+    { "role": "user", "content": "--prompt--" },
+    { "role": "assistant", "content": "--reply--" }
+  ]
+}
+```
+
+- Then, go to open AI into the finetune path and upload our json
+  https://platform.openai.com/finetune
+
+- Once it's ready, to go `playground`
+
+## 2. Create a brand brief
+
+- While the part 1 makes sure the model sounds like you, the part 2 is about saying things you'd say.
+- Part 1 is about writing style, and part 2 is about core beliefs to adopt
+- Beliefs, themes, hot-takes, values to align with
