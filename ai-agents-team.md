@@ -36,3 +36,13 @@
 - While the part 1 makes sure the model sounds like you, the part 2 is about saying things you'd say.
 - Part 1 is about writing style, and part 2 is about core beliefs to adopt
 - Beliefs, themes, hot-takes, values to align with
+
+## 3. Create AI agents
+
+- Idea generator
+- Content writer
+- Refiner/Editor
+
+Identify what should be the input shape on the workflow
+
+> Notion integration:"
