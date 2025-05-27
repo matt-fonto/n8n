@@ -1,0 +1,3 @@
+- Go to businesses that don't understand n8n and build them custom dashboards
+- The workflows live in the backend, but package them. Give them a user experience
+- How can I turn the automation into a SaaS product?
